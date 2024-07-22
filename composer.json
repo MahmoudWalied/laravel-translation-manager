@@ -1,38 +1,49 @@
 {
-    "name": "highsolutions/laravel-translation-manager",
-    "description": "Manage Laravel Translations",
-    "keywords": ["laravel", "translations", "translator", "language"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
-        },        
-        {
-            "name": "HighSolutions",
-            "email": "adam@highsolutions.pl"
-        }
+  "name": "mahmoudwalied/laravel-translation-manager",
+  "description": "Manage Laravel Translations",
+  "keywords": [
+    "laravel",
+    "translations",
+    "translator",
+    "language"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Barry vd. Heuvel",
+      "email": "barryvdh@gmail.com"
+    },
+    {
+      "name": "HighSolutions",
+      "email": "adam@highsolutions.pl"
+    },
+    {
+      "name": "Mahmoud Walied",
+      "email": "mahmoudwalied91@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/console": "^11.0",
+    "illuminate/support": "^11.0",
+    "symfony/finder": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "HighSolutions\\TranslationManager\\": "src/"
+    }
+  },
+  "extra": {
+    "component": "package",
+    "frameworks": [
+      "Laravel 11.x"
     ],
-    "require": {
-        "php": ">=5.4.0|>=8.0.2",
-        "illuminate/console": "5.*|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-        "illuminate/support": "5.*|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-        "symfony/finder": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "HighSolutions\\TranslationManager\\": "src/"
-        }
-    },
-    "extra": {
-        "component": "package",
-        "frameworks": ["Laravel 5.7", "Laravel 5.8", "Laravel 6.x", "Laravel 7.x", "Laravel 8.x", "Laravel 9.x", "Laravel 10.x", "Laravel 11.x"],
-        "laravel": {
-            "providers": [
-                "HighSolutions\\TranslationManager\\ManagerServiceProvider",
-                "HighSolutions\\TranslationManager\\TranslationServiceProvider"
-            ]            
-        }
-    },
-    "minimum-stability": "stable"
+    "laravel": {
+      "providers": [
+        "HighSolutions\\TranslationManager\\ManagerServiceProvider",
+        "HighSolutions\\TranslationManager\\TranslationServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable"
 }
